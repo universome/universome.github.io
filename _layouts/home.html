@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="profile-card">
+      <div class="profile-image-container">
+          <img src="{{ site.profile.image_url }}" alt="Ivan Skorokhodov" class="profile-image">
+      </div>
+      <div class="profile-desc">
+        <h1>Ivan Skorokhodov</h1>
+        <div class="profile-desc-text">
+            <p>
+                I am a CS PhD student in Visual Computing Center @ KAUST university supervised by prof. Mohamed Elhoseiny.
+                I do deep learning and my research interests include generative models and hypernetworks.
+                Besides, I am also hyped by NeRF and have a small weakness on adversarial robustness.
+                Before that, I was a DL researcher at MIPT, doing NLP things.
+                And before even that, I was a software engineer at Yandex.
+            </p>
+            <!-- <p>Aliquam efficitur nisi lacus, vitae semper erat tincidunt nec. Cras nec nisl vel ex consectetur volutpat id sit amet ligula. Phasellus et porta nunc. Nulla et odio non enim feugiat tempus. Fusce est enim, dapibus facilisis lacinia at, suscipit eget nibh. Mauris auctor ex sapien, vitae elementum tortor aliquet a. Sed placerat sollicitudin urna eu dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p> -->
+        </div>
+      </div>
+      <div class="profile-contacts">
+        <a class="profile-contacts-item" href="mailto:iskorokhodov@gmail.com">
+          <i class="far fa-fw fa-envelope"></i>
+          iskorokhodov@gmail.com
+        </a>
+        <a class="profile-contacts-item" href="http://github.com/universome">
+          <i class="fab fa-fw fa-github"></i>
+          @universome
+        </a>
+        <a class="profile-contacts-item" href="http://t.me/universome">
+          <i class="fab fa-fw fa-telegram"></i>
+          @universome
+        </a>
+        <a class="profile-contacts-item" href="http://twitter.com/ivanskorokhodov">
+          <i class="fab fa-fw fa-twitter"></i>
+          @ivanskorokhodov
+        </a>
+        <a class="profile-contacts-item" href="https://scholar.google.com/citations?user=21lY5uIAAAAJ">
+          <i class="ai fa-fw ai-google-scholar-square"></i>
+          Ivan Skorokhodov
+        </a>
+        <!-- <a class="profile-contacts-item" href="https://www.linkedin.com/in/universome/">
+          <i class="fab fa-fw fa-linkedin"></i>
+          @universome
+        </a> -->
+        <a class="profile-contacts-item" href="/assets/cv.pdf">
+          <i class="fas fa-fw fa-file-pdf"></i>
+          <!-- <i class="ai ai-cv"></i> -->
+          CV
+        </a>
+      </div>
+  </div>
+
+  <!-- {{ content }} -->
+
+  <!-- {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%} -->
+
+</div>
