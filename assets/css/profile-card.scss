@@ -7,13 +7,18 @@
     // align-items: center;
 }
 
+.profile-card h1 {
+    margin-bottom: 5px;
+}
+
 .profile-image-container {
     // min-width: 200px;
     // max-width: 250px;
     min-width: 200px;
     max-width: 200px;
-    padding: 5px;
+    padding: 0;
     margin-right: 20px;
+    margin-top: 5px;
 }
 
 .profile-image-container > img {
@@ -21,10 +26,14 @@
     // vertical-align: middle;
 }
 
+.profile-desc {
+    flex-grow: 2;
+}
+
 .profile-desc-text {
     //word-wrap: break-word;
     text-align: justify;
-    max-width: 600px;
+    // max-width: 600px;
 }
 
 .profile-contacts {
@@ -45,7 +54,7 @@
 }
 
 .profile-contacts-item:hover {
-    color: #3498db;
+    color: #1e90ff;
     text-decoration: none;
 }
 

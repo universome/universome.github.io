@@ -21,13 +21,16 @@
 title: Ivan Skorokhodov
 email: iskorokhodov@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am a CS PhD student at KAUST university, working on computer vision.
+  CS PhD student @ KAUST
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ivanskorokhodov
 github_username:  universome
 profile:
   image_url: "/assets/images/helsinki.jpg"
+
+collections:
+  - projects
 
 # Build settings
 theme: minima

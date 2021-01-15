@@ -1,0 +1,58 @@
+{%- if site.projects.size > 0 -%}
+<!-- <h2 class="post-list-heading">{{ page.list_title | default: "Projects" }}</h2> -->
+<ul class="projects-list">
+    {% assign projects = site.projects | sort "date" | reverse %}
+    {%- for project in projects -%}
+    <li class="project-item">
+    <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="project-meta">{{ project.date | date: date_format }}</span> -->
+    <div class="project-image">
+        <a href="{{project.arxiv_url}}">
+            <img src="{{project.image_url}}" alt="{{project.title}}">
+        </a>
+    </div>
+    <div class="project-content">
+        <div class="project-title">
+            <h3>{{ project.title | escape }}</h3>
+            {%- if project.is_preprint -%}
+            <p class="project-conf-label preprint">preprint</p>
+            {%- else -%}
+            <p class="project-conf-label in-proceedings">{{project.conference}}</p>
+            {%- endif -%}
+        </div>
+        <!-- <hr/> -->
+        <p class="project-authors">
+            {%- for author in project.authors -%}
+            {% if forloop.index != 1 %}, {% endif %}
+            {%- if author == "Ivan Skorokhodov" -%}
+                <strong>{{ author }}</strong>
+            {%- else -%}
+                {{ author }}
+            {%- endif -%}
+            {%- endfor -%}
+        </p>
+        <p class="project-desc">
+            {{project.short_description}}
+        </p>
+        <!-- {%- if project.is_preprint != true -%}
+        <p class="project-conference">{{project.conference}}</p>
+        {%- endif -%} -->
+        <div class="project-links">
+            <a class="project-link" href="{{project.arxiv_url}}">
+                <i class="ai fa-fw fa-lg ai-arxiv"></i>
+                <!-- arxiv.org/abs/{{ project.arxiv_url | slice: -10, 10 }} -->
+                arXiv
+            </a>
+            <a class="project-link" href="{{project.code_url}}">
+                <i class="fab fa-fw fa-lg fa-github"></i>
+                <!-- arxiv.org/abs/{{ project.arxiv_url | slice: -10, 10 }} -->
+                Code
+            </a>
+        </div>
+    </div>
+    </li>
+    {%- endfor -%}
+</ul>
+
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+{%- endif -%}

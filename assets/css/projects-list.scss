@@ -1,0 +1,106 @@
+---
+---
+.projects-list {
+    // border-top: 1px solid black;
+    list-style: none;
+    margin-top: 40px;
+    margin-left: 0;
+}
+
+.project-item {
+    // padding: 10px;
+    // border: 1px solid black;
+    margin-top: 40px;
+    display: flex;
+}
+
+.project-title {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+}
+
+.project-title h3 {
+    margin-bottom: 0;
+    color: #1e90ff;
+}
+
+.project-image {
+    margin: 20px;
+    margin-left: 0;
+    margin-top: 0px;
+    min-width: 100px;
+}
+
+.project-image img {
+    width: 100px;
+    border: 1px solid #2c3e50;
+    padding: 3px;
+    border-radius: 1px;
+}
+
+.project-image img:hover {
+    border-color: #1e90ff;
+}
+
+.project-content {
+    margin-left: 10px;
+}
+
+.project-authors {
+    font-style: italic;
+    margin-bottom: 5px;
+    // color: #1e90ff;
+    font-size: 0.9em;
+}
+
+.project-conf-label {
+    margin-left: 10px;
+    // border: 2px solid #2ecc71;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-bottom: 0px;
+}
+
+.project-conf-label.in-proceedings {
+    background-color: #2ecc71;
+}
+
+.project-conf-label.preprint {
+    background-color: #bdc3c7;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+.project-link {
+    border: 1px solid black;
+    padding: 5px 7px;
+    border-radius: 1px;
+}
+
+.project-links a {
+    margin-right: 20px;
+    color: black;
+}
+
+.project-links a:visited {
+    color: black;
+}
+
+.project-links a:hover {
+    color: #1e90ff;
+    border-color: #1e90ff;
+    text-decoration: none;
+}
+
+.project-links a > i {
+    margin-bottom: -3px;
+}
+
+.project-desc {
+    text-align: justify;
+}
