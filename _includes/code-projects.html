@@ -1,0 +1,33 @@
+{%- if site.code_projects.size > 0 -%}
+<!-- <h2 class="post-list-heading">{{ page.list_title | default: "Projects" }}</h2> -->
+<div class="code-projects-section">
+<ul class="wrapper">
+    <h2>Programming projects</h2>
+    {%- assign code_projects_sorted = (site.code_projects | sort: "display_order_reverse" | reverse) -%}
+    {%- for project in code_projects_sorted -%}
+    <li class="code-project-item">
+    <div class="code-project-title">
+        <h3>
+            <a href="{{project.code_url}}" target="_blank">
+                <i class="fab fa-fw fa-lg fa-github"></i>
+                <span>{{project.title}}</span>
+            </a>
+        </h3>
+
+        <ul class="code-project-technologies">
+            {%- for tech in project.technologies -%}
+                <li class="code-project-technology">{{tech}}</li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    <!-- <hr/> -->
+    <p class="code-project-desc">
+        {{project.description}}
+    </p>
+
+    </li>
+    {%- endfor -%}
+</ul>
+</div>
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+{%- endif -%}

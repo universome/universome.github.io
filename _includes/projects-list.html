@@ -1,7 +1,9 @@
 {%- if site.projects.size > 0 -%}
 <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Projects" }}</h2> -->
-<ul class="projects-list">
-    {% assign projects = site.projects | sort "date" | reverse %}
+<div class="projects-section">
+<h2>Publications</h2>
+<ul class="projects-list wrapper">
+    {% assign projects = site.projects | sort: "date" | reverse %}
     {%- for project in projects -%}
     <li class="project-item">
     <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -53,6 +55,6 @@
     </li>
     {%- endfor -%}
 </ul>
-
+</div>
 <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
 {%- endif -%}
