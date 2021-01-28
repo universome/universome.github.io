@@ -61,3 +61,27 @@
 .profile-contacts-item a:hover {
     // color: blue;
 }
+
+@import "minima";
+
+@include media-query($on-palm) {
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        // justify-content: center;
+    }
+
+    .profile-image-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-contacts {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

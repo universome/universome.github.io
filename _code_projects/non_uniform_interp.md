@@ -1,6 +1,6 @@
 ---
 display_order_reverse: 5
-title:  "Differentiable Non-Uniform Points Interpolation"
+title:  "Non-Uniform Interpolation"
 code_url: "https://github.com/universome/non-uniform-interpolation"
 technologies:
     - CUDA

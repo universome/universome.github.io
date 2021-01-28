@@ -113,3 +113,42 @@
 .project-desc {
     text-align: justify;
 }
+
+@import "minima";
+
+@include media-query($on-palm) {
+    .project-item {
+        flex-direction: column;
+    }
+
+    .project-item:not(:last-child) {
+        margin-bottom: 100px;
+    }
+
+    .project-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-links {
+        text-align: center;
+    }
+
+    .project-title {
+        // flex-direction: column;
+        display: block;
+        // justify-content: flext-start;
+    }
+
+    .project-title h3 {
+        display: inline;
+        // font-size: 1.1em;
+    }
+
+    .project-conf-label {
+        // margin-left: 0;
+        // display: inline-block;
+        display: inline;
+    }
+}
+
