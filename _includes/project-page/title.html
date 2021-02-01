@@ -1,0 +1,13 @@
+<div class="wrapper project-page">
+    <h1 class="project-page-title">{{page.project.title}}</h1>
+
+    <ul class="authors-list">
+    {%- for author in page.project.authors -%}
+        <li>{{author.name}}</li>
+    {%- endfor -%}
+    </ul>
+
+    <!-- <p class="abstract">
+        {{page.project.abstract}}
+    </p> -->
+</div>

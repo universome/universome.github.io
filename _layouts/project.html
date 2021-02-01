@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <link rel="stylesheet" href="/assets/css/project-page.css">
+
+  <body>
+    <main class="project-page page-content" aria-label="Content">
+        {% include project-page/title.html %}
+        {% include project-page/links.html %}
+    </main>
+
+    {%- include project-page/footer.html -%}
+  </body>
+</html>

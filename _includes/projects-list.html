@@ -40,12 +40,12 @@
         <p class="project-conference">{{project.conference}}</p>
         {%- endif -%} -->
         <div class="project-links">
-            <a class="project-link" href="{{project.arxiv_url}}">
+            <a class="project-link" href="{{project.arxiv_url}}" target="_blank">
                 <i class="ai fa-fw fa-lg ai-arxiv"></i>
                 <!-- arxiv.org/abs/{{ project.arxiv_url | slice: -10, 10 }} -->
                 arXiv
             </a>
-            <a class="project-link" href="{{project.code_url}}">
+            <a class="project-link" href="{{project.code_url}}" target="_blank">
                 <i class="fab fa-fw fa-lg fa-github"></i>
                 <!-- arxiv.org/abs/{{ project.arxiv_url | slice: -10, 10 }} -->
                 Code
