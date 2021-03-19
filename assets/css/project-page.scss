@@ -1,9 +1,59 @@
 ---
 ---
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .project-page .project-links {
     text-align: center;
 }
 
 .project-page-title {
     text-align: center;
+    font-size: 2.5em;
+}
+
+.project-page .subtitle {
+    font-size: 1.5em;
+}
+
+.project-page .authors-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.project-page .authors-list li:not(:first-child) {
+    margin-left: 2em;
+}
+
+.project-page .authors-list a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.project-page .authors-list a:hover {
+    color: #2c3e50;
+    transition: 0.3s;
+}
+
+.project-page .common-orgs {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.project-page .abstract {
+    text-align: justify;
+}
+
+.project-page-block {
+    margin-bottom: 50px;
+}
+
+.bibtex pre {
+    // margin: 0 auto;
+    // max-width: 1200px;
+    padding: 10px;
 }

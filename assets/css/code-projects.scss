@@ -29,12 +29,20 @@
 
 .code-project-title a,
 .code-project-title a:visited {
-    color: #1e90ff;
+    // color: #1e90ff;
+    color: black;
+}
+
+.code-project-title a span {
+    padding-bottom: 5px;
 }
 
 .code-project-title a:hover {
     text-decoration: none;
     color: black;
+}
+.code-project-title a:hover span {
+    border-bottom: 2px solid #34495e;
 }
 
 .code-project-technologies {
@@ -44,10 +52,10 @@
 }
 
 .code-project-technology {
-    background-color: #3498db;
+    background-color: #34495e;
     color: white;
     padding: 2px 8px;
-    border-radius: 3px;
+    border-radius: 2px;
     margin-left: 10px;
     // display: inline;
 }
