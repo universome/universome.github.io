@@ -7,10 +7,18 @@
 
   <body>
     <main class="project-page page-content" aria-label="Content">
-        {% include project-page/title.html %}
-        {% include project-page/links.html %}
+        <div class="wrapper">
+            <div class="project-page-block">{% include project-page/title.html %}</div>
+            <div class="project-page-block">{% include project-page/links.html %}</div>
+            <div class="project-page-block">{% include project-page/sections.html %}</div>
+            <div class="project-page-block">{% include project-page/bibtex.html %}</div>
+        </div>
     </main>
 
     {%- include project-page/footer.html -%}
+
+    <!-- Put this after the content so the page is displayed faster? -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </body>
 </html>

@@ -1,13 +1,33 @@
-<div class="wrapper project-page">
-    <h1 class="project-page-title">{{page.project.title}}</h1>
+<h1 class="project-page-title">{{page.project.title}}</h1>
 
-    <ul class="authors-list">
-    {%- for author in page.project.authors -%}
-        <li>{{author.name}}</li>
+<ol class="authors-list">
+{%- for author in page.project.authors -%}
+    <li>
+        {%- if author.link -%}
+        <a href="{{author.link}}" target="_blank">{{author.name}}</a>
+        {%- else -%}
+        {{author.name}}
+        {%- endif -%}
+        {%- for org_index in author.affiliations -%}
+        <sup>{{org_index}}</sup>
+        {%- endfor -%}
+    </li>
+{%- endfor -%}
+</ol>
+
+{%- if page.project.common_organizations -%}
+{%- for org_name in page.project.common_organizations -%}
+<div class="common-orgs">
+    <h4 class="common-org-name">
+        {{org_name}}
+    </h4>
+</div>
+{%- endfor -%}
+{%- endif -%}
+
+<div class="abstract">
+    <h2 class="subtitle">Informal summary</h2>
+    {%- for paragraph in page.project.informal_summary -%}
+        <p>{{paragraph}}</p>
     {%- endfor -%}
-    </ul>
-
-    <!-- <p class="abstract">
-        {{page.project.abstract}}
-    </p> -->
 </div>

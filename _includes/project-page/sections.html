@@ -1,0 +1,12 @@
+<div class="sections">
+{%- for section in page.project.sections -%}
+<section>
+<h2 class="section-title">{{section.title}}</h2>
+<div class="section-text">
+{%- for paragraph in section.paragraphs -%}
+<p>{{paragraph}}</p>
+{%- endfor -%}
+</div>
+</section>
+{%- endfor -%}
+</div>
