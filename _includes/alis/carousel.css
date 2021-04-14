@@ -1,0 +1,40 @@
+.slider-container {
+    margin-bottom: 20px;
+}
+
+.resample-buttons {
+    text-align: center;
+}
+
+.resample-button {
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    background-color: var(--splide-sea-green);
+    color: white;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+.resample-button:first-of-type {
+    margin-right: 50px;
+}
+
+.resample-button:hover {
+    /* border: 1px solid var(--very-dark-color); */
+    border: 1px solid var(--very-dark-color);
+    /* opacity: 0.7; */
+    /* border-color: var(--asbestos); */
+}
+
+.resample-button:focus {
+    outline: none;
+}
+
+.resample-button:active {
+    /* color: white; */
+    /* background-color: var(--light-grey); */
+    /* border: 1px solid black; */
+    opacity: 0.8;
+}

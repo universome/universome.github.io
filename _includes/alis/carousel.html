@@ -1,0 +1,32 @@
+<style>
+{% include alis/carousel.css %}
+</style>
+
+{% assign demo_src_address = "https://vision-cair.s3.amazonaws.com/alis/demo" %}
+
+<div class="slider-container">
+    <div id="alis-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="{{demo_src_address}}/seed-000002-000011.jpg"></li>
+                <li class="splide__slide"><img src="{{demo_src_address}}/seed-000011-000012.jpg"></li>
+                <li class="splide__slide"><img src="{{demo_src_address}}/seed-000012-000005.jpg"></li>
+                <li class="splide__slide"><img src="{{demo_src_address}}/seed-000005-000004.jpg"></li>
+                <li class="splide__slide"><img src="{{demo_src_address}}/seed-000004-000005.jpg"></li>
+                <li class="splide__slide"><img src="{{demo_src_address}}/seed-000005-000006.jpg"></li>
+                <li class="splide__slide"><img src="{{demo_src_address}}/seed-000006-000007.jpg"></li>
+                <li class="splide__slide"><img src="{{demo_src_address}}/seed-000007-000008.jpg"></li>
+                <li class="splide__slide"><img src="{{demo_src_address}}/seed-000008-000009.jpg"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="resample-buttons">
+        <button class="resample-button" id="resample-left">Resample \(w_l\)</button>
+        <button class="resample-button" id="resample-right">Resample \(w_r\)</button>
+    </div>
+</div>
+
+<script>
+{% include alis/carousel.js %}
+</script>
