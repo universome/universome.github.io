@@ -1,6 +1,6 @@
 ---
 layout: project
-published: true
+published: false
 title: Adversarial Generation of Continuous Images
 favicon_url: /assets/projects/class-norm/favicon.ico
 project:
@@ -34,25 +34,6 @@ project:
             - type: text
               content: >-
                     If you get interested in our model, you should also check <a href="https://arxiv.org/abs/2011.13775" target="_blank">CIPS paper</a>, which was a parallel CVPR submission by Samsung AI Moscow & Skoltech. The authors achieved higher scores, but their architecture is ~5 times bigger/slower (since they didn't use multi-scaling).
-            - type: table
-              content: >-
-                    <table>
-                    <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Age</th>
-                    </tr>
-                    <tr>
-                        <td>Jill</td>
-                        <td>Smith</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <td>Eve</td>
-                        <td>Jackson</td>
-                        <td>94</td>
-                    </tr>
-                    </table>
     bibtex: >-
         @misc{inr_gan,
             title={Adversarial Generation of Continuous Images},

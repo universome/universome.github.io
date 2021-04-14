@@ -8,7 +8,7 @@ conference: Beyond First Order Methods in ML workshop, NeurIPS 2019
 # conference: Optimization workshop @ NeurIPS 2019
 code_url: "https://github.com/universome/loss-patterns"
 image_url: "/assets/images/projects-thumbs/loss-patterns.jpg"
-project_url: "https://universome.github.io/loss-patterns"
+# project_url: "https://universome.github.io/loss-patterns"
 authors:
   - Ivan Skorokhodov
   - Mikhail Burtsev

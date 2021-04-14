@@ -40,10 +40,12 @@
         <p class="project-conference">{{project.conference}}</p>
         {%- endif -%} -->
         <div class="project-links">
+            {% if project.project_url %}
             <a class="project-link" href="{{project.project_url}}" target="_blank">
                 <i class="fas fa-fw fa-lg fa-link"></i>
                 Project page
             </a>
+            {% endif %}
             <a class="project-link" href="{{project.arxiv_url}}" target="_blank">
                 <i class="ai fa-fw fa-lg ai-arxiv"></i>
                 <!-- arxiv.org/abs/{{ project.arxiv_url | slice: -10, 10 }} -->

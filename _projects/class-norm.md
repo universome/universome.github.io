@@ -4,7 +4,7 @@ date: 19 Jun 2020
 categories: zero-shot learning, continual learning
 arxiv_url: "https://arxiv.org/abs/2006.11328"
 image_url: "/assets/images/projects-thumbs/nm-zsl.jpg"
-project_url: "https://universome.github.io/class-norm"
+# project_url: "https://universome.github.io/class-norm"
 is_preprint: false
 conference: ICLR 2021
 code_url: "https://github.com/universome/class-norm"
