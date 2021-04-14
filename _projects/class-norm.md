@@ -7,7 +7,7 @@ image_url: "/assets/images/projects-thumbs/nm-zsl.jpg"
 project_url: "https://universome.github.io/class-norm"
 is_preprint: false
 conference: ICLR 2021
-code_url: "https://github.com/universome/nm-zsl"
+code_url: "https://github.com/universome/class-norm"
 authors:
   - Ivan Skorokhodov
   - Mohamed Elhoseiny

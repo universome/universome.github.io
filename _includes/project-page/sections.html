@@ -1,12 +1,48 @@
-<div class="sections">
 {%- for section in page.project.sections -%}
-<section>
+<div class="content-block-wrapper">
+<div class="content-block section">
+
+{% if forloop.index0 > 0 %}
+<hr class="hr"/>
+{% endif %}
+
 <h2 class="section-title">{{section.title}}</h2>
 <div class="section-text">
-{%- for paragraph in section.paragraphs -%}
-<p>{{paragraph}}</p>
-{%- endfor -%}
+    {%- for paragraph in section.paragraphs -%}
+        {% case paragraph.type %}
+            {% when "text" %}
+            <p>{{paragraph.content}}</p>
+
+            {% when "image" %}
+            <div class="img-container">
+                <img src="{{paragraph.url}}" style="max-width: {{paragraph.max_width}}px"/>
+                {% if paragraph.caption %}
+                <p class="caption">{{paragraph.caption}}</p>
+                {% endif %}
+            </div>
+
+            {% when "images" %}
+            <div class="img-container">
+                {% for url in paragraph.urls %}
+                <img src="{{url}}" style="max-width: {{paragraph.max_width}}px"/>
+                {% endfor %}
+                {% if paragraph.caption %}
+                <p class="caption">{{paragraph.caption}}</p>
+                {% endif %}
+            </div>
+
+            {% when "table" %}
+            <div class="table-container">
+                <p>{{paragraph.content}}</p>
+            </div>
+
+            {% when "custom_include" %}
+            <div class="custom-include">
+                {% include {{ paragraph.file }} %}
+            </div>
+        {%- endcase -%}
+    {%- endfor -%}
 </div>
-</section>
-{%- endfor -%}
 </div>
+</div>
+{%- endfor -%}

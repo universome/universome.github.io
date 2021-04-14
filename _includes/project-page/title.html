@@ -1,33 +1,55 @@
-<h1 class="project-page-title">{{page.project.title}}</h1>
+{% if page.title.size > 50 %}
+    {% assign long_title_class = "long-title" %}
+{% else %}
+    {% assign long_title_class = "" %}
+{% endif %}
+<h1 class="project-page-title {{long_title_class}}">{{page.title}}</h1>
 
 <ol class="authors-list">
 {%- for author in page.project.authors -%}
-    <li>
+    <li class="author-link">
         {%- if author.link -%}
         <a href="{{author.link}}" target="_blank">{{author.name}}</a>
         {%- else -%}
         {{author.name}}
         {%- endif -%}
         {%- for org_index in author.affiliations -%}
-        <sup>{{org_index}}</sup>
+        <sup>{{org_index}}{%- if forloop.last != true -%},{%- endif -%}</sup>
         {%- endfor -%}
     </li>
 {%- endfor -%}
 </ol>
 
 {%- if page.project.common_organizations -%}
-{%- for org_name in page.project.common_organizations -%}
-<div class="common-orgs">
-    <h4 class="common-org-name">
-        {{org_name}}
-    </h4>
-</div>
+<h4 class="common-orgs">
+{%- for org in page.project.common_organizations -%}
+<span class="common-org-name">
+{% if page.project.common_organizations.size > 1 %}
+<sup>{{forloop.index}}</sup>
+{%- endif -%}
+<a target="_blank" href="{{org.link}}">{{org.name}}</a>
+</span>
 {%- endfor -%}
+</h4>
 {%- endif -%}
 
-<div class="abstract">
-    <h2 class="subtitle">Informal summary</h2>
-    {%- for paragraph in page.project.informal_summary -%}
-        <p>{{paragraph}}</p>
-    {%- endfor -%}
+<div class="logos">
+{%- for org in page.project.common_organizations -%}
+<img class="logo" src="{{org.logo}}" alt="{{org.name}}">
+{%- endfor -%}
 </div>
+
+
+{%- if page.project.teaser -%}
+<div class="teaser">
+    <div class="teaser-img-wrapper">
+        {% case page.project.teaser.type %}
+        {% when "image" %}
+        <img src="{{page.project.teaser.img_url}}" alt="{{page.project.teaser.caption}}">
+        {% when "custom" %}
+        {{ page.project.teaser.content }}
+        {% endcase %}
+    </div>
+    <p>{{page.project.teaser.caption}}</p>
+</div>
+{%- endif -%}

@@ -5,15 +5,33 @@
 
   <link rel="stylesheet" href="/assets/css/project-page.css">
 
+  {%- include load-libs.html -%}
+
   <body>
-    <main class="project-page page-content" aria-label="Content">
-        <div class="wrapper">
-            <div class="project-page-block">{% include project-page/title.html %}</div>
-            <div class="project-page-block">{% include project-page/links.html %}</div>
-            <div class="project-page-block">{% include project-page/sections.html %}</div>
-            <div class="project-page-block">{% include project-page/bibtex.html %}</div>
-        </div>
-    </main>
+    <div class="project-page page-content" aria-label="Content">
+        <!-- <div class="wrapper"> -->
+            <div class="content-block-wrapper">
+                <div class="content-block">{% include project-page/title.html %}</div>
+            </div>
+            <div class="content-block-wrapper abstract">
+                <div class="content-block">
+                    <div class="abstract">
+                        <h2 class="subtitle">Summary</h2>
+                        {%- for paragraph in page.project.informal_summary -%}
+                            <p>{{paragraph}}</p>
+                        {%- endfor -%}
+                    </div>
+                    {% include project-page/links.html %}
+                </div>
+            </div>
+
+            {% include project-page/sections.html %}
+
+            <div class="content-block-wrapper">
+                <div class="content-block">{% include project-page/bibtex.html %}</div>
+            </div>
+        <!-- </div> -->
+    </div>
 
     {%- include project-page/footer.html -%}
 
