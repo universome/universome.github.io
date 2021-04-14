@@ -39,10 +39,10 @@
 
 .code-project-title a:hover {
     text-decoration: none;
-    color: black;
+    color: var(--very-dark-color);
 }
 .code-project-title a:hover span {
-    border-bottom: 2px solid #34495e;
+    border-bottom: 2px solid var(--dark-color);
 }
 
 .code-project-technologies {
@@ -52,7 +52,7 @@
 }
 
 .code-project-technology {
-    background-color: #34495e;
+    background-color: var(--dark-color);
     color: white;
     padding: 2px 8px;
     border-radius: 2px;

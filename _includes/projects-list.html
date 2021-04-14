@@ -1,7 +1,7 @@
 {%- if site.projects.size > 0 -%}
 <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Projects" }}</h2> -->
 <div class="projects-section">
-<h2>Publications</h2>
+<h2>Research projects</h2>
 <ul class="projects-list wrapper">
     {% assign projects = site.projects | sort: "date" | reverse %}
     {%- for project in projects -%}
@@ -40,6 +40,10 @@
         <p class="project-conference">{{project.conference}}</p>
         {%- endif -%} -->
         <div class="project-links">
+            <a class="project-link" href="{{project.project_url}}" target="_blank">
+                <i class="fas fa-fw fa-lg fa-link"></i>
+                Project page
+            </a>
             <a class="project-link" href="{{project.arxiv_url}}" target="_blank">
                 <i class="ai fa-fw fa-lg ai-arxiv"></i>
                 <!-- arxiv.org/abs/{{ project.arxiv_url | slice: -10, 10 }} -->

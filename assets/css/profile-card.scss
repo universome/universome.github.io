@@ -22,7 +22,7 @@
 }
 
 .profile-image-container > img {
-    border-radius: 3px;
+    border-radius: 2px;
     // vertical-align: middle;
 }
 
@@ -45,12 +45,12 @@
 .profile-contacts-item {
     margin-bottom: 5px;
     display: block;
-    color: black;
+    color: var(--very-dark-color);
     white-space: nowrap;
 }
 
 .profile-contacts-item:visited {
-    color: black;
+    color: var(--very-dark-color);
 }
 
 .profile-contacts-item:hover {

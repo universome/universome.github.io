@@ -10,6 +10,20 @@
 @import "/assets/css/code-projects.css";
 
 
+:root {
+    --dark-color: #34495e;
+    --very-dark-color: #2c3e50;
+    --peter-river: #3498db;
+    --peter-river-transparent: rgba(52, 152, 219, 0.12);
+    --light-grey: #ecf0f1;
+    --light-grey-blue: #f5f6fa;
+    --silver: #bdc3c7;
+    --asbestos: #7f8c8d;
+    --splide-sea-green: #20b2aa;
+}
+
+
+
 .footer-text {
     color: #828282;
     margin-bottom: 0;
@@ -18,6 +32,6 @@
 
 .site-footer hr {
     margin: 10px auto;
-    border: 1px solid#ecf0f1;
+    border: 1px solid var(--light-grey);
     max-width: 250px;
 }
