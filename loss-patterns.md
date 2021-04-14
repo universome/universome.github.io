@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 published: false
 title: Loss Patterns of Neural Networks
 favicon_url: /assets/projects/class-norm/favicon.ico

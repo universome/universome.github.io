@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 published: true
 title: Class Normalization for (Continual?) Generalized Zero-Shot Learning
 favicon_url: /assets/projects/class-norm/favicon.ico

@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 published: true
 title: Aligning Latent and Image Spaces to Connect the Unconnectable
 favicon_url: /assets/projects/class-norm/favicon.ico

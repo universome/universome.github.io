@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 published: false
 title: Adversarial Generation of Continuous Images
 favicon_url: /assets/projects/class-norm/favicon.ico

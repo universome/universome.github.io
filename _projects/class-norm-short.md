@@ -1,5 +1,5 @@
 ---
-title:  "Class Normalization for Zero-Shot Learning"
+title: Class Normalization for (Continual?) Generalized Zero-Shot Learning
 date: 19 Jun 2020
 categories: zero-shot learning, continual learning
 arxiv_url: "https://arxiv.org/abs/2006.11328"
