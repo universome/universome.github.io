@@ -25,7 +25,7 @@ informal_summary:
     - >-
         We develop a method to generate infinite high-resolution images with diverse and complex content. It is based on a perfectly equivariant generator with synchronous interpolations in the image and latent spaces. Latent codes, when sampled, are positioned on the coordinate grid, and each pixel is computed from an interpolation of the nearby style codes. We modify the AdaIN mechanism to work in such a setup and train the generator in an adversarial setting to produce images positioned between any two latent vectors. At test time, this allows for generating complex and diverse infinite images and connecting any two unrelated scenes into a single arbitrarily large panorama. Apart from that, we introduce LHQ: a new dataset of 90k high-resolution nature landscapes. We test the approach on LHQ, LSUN Tower and LSUN Bridge and outperform the baselines by at least 4 times in terms of quality and diversity of the produced infinite images.
 links:
-    arxiv: https://arxiv.org/todo
+    arxiv: https://arxiv.org/abs/2104.06954
     github: https://github.com/universome/alis
 sections:
     - title: Live demo [infinite generation + resampling]
@@ -88,12 +88,12 @@ teaser:
     # img_url: /assets/projects/alis/images/teaser.jpg
     caption: Our method can generate infinite images of diverse and complex scenes that transition naturally from one into another. It does so without any conditioning and trains without any supervision from a dataset of <i>unrelated square images</i>.
 bibtex: >-
-    @inproceedings{
-        alis,
-        title={Aligning latent and image spaces to connect the unconnectable},
-        author={Ivan Skorokhodov and Mohamed Elhoseiny},
-        booktitle={International Conference on Learning Representations},
-        year={2021},
-        url={https://openreview.net/forum?id=7pgFL2Dkyyy}
+    @misc{alis,
+      title={Aligning Latent and Image Spaces to Connect the Unconnectable}, 
+      author={Ivan Skorokhodov and Grigorii Sotnikov and Mohamed Elhoseiny},
+      year={2021},
+      eprint={2104.06954},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
     }
 ---
