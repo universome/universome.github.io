@@ -1,42 +1,32 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+---
+layout: default
+---
 
-  {%- include head.html -%}
+<link rel="stylesheet" href="/assets/css/project-page.css">
 
-  <link rel="stylesheet" href="/assets/css/project-page.css">
-
-  {%- include load-libs.html -%}
-
-  <body>
-    <div class="project-page page-content" aria-label="Content">
-        <!-- <div class="wrapper"> -->
-            <div class="content-block-wrapper">
-                <div class="content-block">{% include project-page/title.html %}</div>
-            </div>
-            <div class="content-block-wrapper abstract">
-                <div class="content-block">
-                    <div class="abstract">
-                        <h2 class="subtitle">Summary</h2>
-                        {%- for paragraph in page.informal_summary -%}
-                            <p>{{paragraph}}</p>
-                        {%- endfor -%}
-                    </div>
-                    {% include project-page/links.html %}
+<div class="project-page page-content" aria-label="Content">
+    <!-- <div class="wrapper"> -->
+        <div class="content-block-wrapper">
+            <div class="content-block">{% include project-page/title.html %}</div>
+        </div>
+        <div class="content-block-wrapper abstract">
+            <div class="content-block">
+                <div class="abstract">
+                    <h2 class="subtitle">Summary</h2>
+                    {%- for paragraph in page.informal_summary -%}
+                        <p>{{paragraph}}</p>
+                    {%- endfor -%}
                 </div>
+                {% include project-page/links.html %}
             </div>
+        </div>
 
-            {% include project-page/sections.html %}
+        {% include project-page/sections.html %}
 
-            <div class="content-block-wrapper">
-                <div class="content-block">{% include project-page/bibtex.html %}</div>
-            </div>
-        <!-- </div> -->
-    </div>
+        <div class="content-block-wrapper">
+            <div class="content-block">{% include project-page/bibtex.html %}</div>
+        </div>
+    <!-- </div> -->
+</div>
 
-    {%- include project-page/footer.html -%}
-
-    <!-- Put this after the content so the page is displayed faster? -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  </body>
-</html>
+{%- include project-page/footer.html -%}

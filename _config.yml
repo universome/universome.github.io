@@ -35,8 +35,8 @@ collections:
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 
 google_analytics: "G-DR1WHDFLQB"
 
