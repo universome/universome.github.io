@@ -2,7 +2,7 @@
 title:  "Aligning Latent and Image Spaces to Connect the Unconnectable"
 date: 12 April 2021
 categories: gans, inrs, infinite images
-arxiv_url: "https://arxiv.org/todo"
+arxiv_url: "https://arxiv.org/abs/2104.06954"
 project_url: "https://universome.github.io/alis"
 is_preprint: true
 conference: ~
