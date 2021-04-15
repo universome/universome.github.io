@@ -4,6 +4,10 @@ published: true
 title: Aligning Latent and Image Spaces to Connect the Unconnectable
 favicon_url: /assets/projects/class-norm/favicon.ico
 load_splidejs: true
+og:
+  description: Infinite image generation with a spatially equivariant generator
+  image: "https://universome.github.io/assets/projects/alis/images/teaser.jpg"
+  url: "https://universome.github.io/alis"
 authors:
     - name: Ivan Skorokhodov
       link: https://universome.github.io
@@ -89,7 +93,7 @@ teaser:
     caption: Our method can generate infinite images of diverse and complex scenes that transition naturally from one into another. It does so without any conditioning and trains without any supervision from a dataset of <i>unrelated square images</i>.
 bibtex: >-
     @misc{alis,
-      title={Aligning Latent and Image Spaces to Connect the Unconnectable}, 
+      title={Aligning Latent and Image Spaces to Connect the Unconnectable},
       author={Ivan Skorokhodov and Grigorii Sotnikov and Mohamed Elhoseiny},
       year={2021},
       eprint={2104.06954},
