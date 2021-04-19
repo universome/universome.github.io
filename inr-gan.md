@@ -44,22 +44,17 @@ sections:
           content: >-
                 If you get interested in our model, you should also check <a href="https://arxiv.org/abs/2011.13775" target="_blank">CIPS paper</a>, which was a parallel CVPR submission by Samsung AI Moscow & Skoltech. The authors achieved higher scores, but their architecture is ~5 times bigger/slower (since they didn't use multi-scaling).
 bibtex: >-
-    @misc{inr_gan,
+    @article{inr_gan,
         title={Adversarial Generation of Continuous Images},
         author={Ivan Skorokhodov and Savva Ignatyev and Mohamed Elhoseiny},
-        year={2020},
-        eprint={2011.12026},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV}
+        journal={arXiv preprint arXiv:2011.12026},
+        year={2020}
     }
 
-
-    @misc{cips,
+    @article{cips,
         title={Image Generators with Conditionally-Independent Pixel Synthesis},
-        author={Ivan Anokhin and Kirill Demochkin and Taras Khakhulin and Gleb Sterkin and Victor Lempitsky and Denis Korzhenkov},
-        year={2020},
-        eprint={2011.13775},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV}
+        author={Anokhin, Ivan and Demochkin, Kirill and Khakhulin, Taras and Sterkin, Gleb and Lempitsky, Victor and Korzhenkov, Denis},
+        journal={arXiv preprint arXiv:2011.13775},
+        year={2020}
     }
 ---

@@ -92,12 +92,10 @@ teaser:
     # img_url: /assets/projects/alis/images/teaser.jpg
     caption: Our method can generate infinite images of diverse and complex scenes that transition naturally from one into another. It does so without any conditioning and trains without any supervision from a dataset of <i>unrelated square images</i>.
 bibtex: >-
-    @misc{alis,
-      title={Aligning Latent and Image Spaces to Connect the Unconnectable},
-      author={Ivan Skorokhodov and Grigorii Sotnikov and Mohamed Elhoseiny},
-      year={2021},
-      eprint={2104.06954},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+    @article{alis,
+        title={Aligning Latent and Image Spaces to Connect the Unconnectable},
+        author={Ivan Skorokhodov and Grigorii Sotnikov and Mohamed Elhoseiny},
+        journal={arXiv preprint arXiv:2104.06954},
+        year={2021}
     }
 ---
