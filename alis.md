@@ -79,9 +79,9 @@ sections:
         - content: >-
             We introduce a novel Landscapes HQ (LHQ) dataset, which consists of 90k high-resolution (>= 1024x1024) images of natural landscapes and outdoor scenery. We collected it from Unsplash and Flickr using a manually collected set of 400 search queries and preprocessed with Mask R-CNN to exclude images that contain objects. It is shipped with either Unsplash or Creative Commons licenses, which permit the use for research purposes.
         - type: image
-          url: /assets/projects/alis/images/lhq-100.jpg
+          url: /assets/projects/alis/images/lhq-25.jpg
           max_width: 700
-          caption: 100 random images from LHQ (downsized). The dataset will be released soon.
+          caption: 25 random images from LHQ (downsized). The dataset is available for download from the <a href="https://github.com/universome/alis" target="_blank">github repo</a>.
 teaser:
     type: custom
     content: >-
