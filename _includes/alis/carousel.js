@@ -1,5 +1,5 @@
 const TOTAL_NUM_SEEDS = 250;
-const IMAGES_LOCATION = 'https://vision-cair.s3.amazonaws.com/alis/demo';
+const IMAGES_LOCATION = 'https://kaust-cair.s3.amazonaws.com/alis/demo';
 let randomSeeds = [2, 11, 12, 5, 4, 5, 6, 7, 8, 9];
 
 let slider = new Splide('#alis-slider', {
