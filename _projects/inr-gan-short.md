@@ -7,7 +7,7 @@ is_preprint: false
 conference: CVPR 2021
 image_url: "/assets/images/projects-thumbs/inr-gan.jpg"
 code_url: "https://github.com/universome/inr-gan"
-# project_url: "https://universome.github.io/inr-gan"
+project_url: "https://universome.github.io/inr-gan"
 authors:
   - Ivan Skorokhodov
   - Savva Ignatyev
