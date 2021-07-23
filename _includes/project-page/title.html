@@ -5,6 +5,10 @@
 {% endif %}
 <h1 class="project-page-title {{long_title_class}}">{{page.title}}</h1>
 
+{% if page.conference %}
+<h5 class="conference-name">{{page.conference}}</h5>
+{% endif %}
+
 <ol class="authors-list">
 {%- for author in page.authors -%}
     <li class="author-link">

@@ -2,6 +2,7 @@
 layout: page
 published: true
 title: Adversarial Generation of Continuous Images
+conference: CVPR 2021
 favicon_url: /assets/projects/class-norm/favicon.ico
 og:
   description: INR-based GAN for 2D image generation

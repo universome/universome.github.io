@@ -2,6 +2,7 @@
 layout: page
 published: true
 title: Aligning Latent and Image Spaces to Connect the Unconnectable
+conference: ICCV 2021
 favicon_url: /assets/projects/class-norm/favicon.ico
 load_splidejs: true
 og:

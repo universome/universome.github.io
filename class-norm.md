@@ -2,6 +2,7 @@
 layout: page
 published: true
 title: Class Normalization for (Continual?) Generalized Zero-Shot Learning
+conference: ICLR 2021
 favicon_url: /assets/projects/class-norm/favicon.ico
 authors:
   - name: Ivan Skorokhodov

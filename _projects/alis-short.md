@@ -4,8 +4,8 @@ date: 12 April 2021
 categories: gans, inrs, infinite images
 arxiv_url: "https://arxiv.org/abs/2104.06954"
 project_url: "https://universome.github.io/alis"
-is_preprint: true
-conference: ~
+is_preprint: false
+conference: ICCV 2021
 image_url: "/assets/images/projects-thumbs/alis.jpg"
 code_url: "https://github.com/universome/alis"
 authors:
