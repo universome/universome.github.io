@@ -26,7 +26,7 @@ url: "https://universome.github.io" # the base hostname & protocol for your site
 twitter_username: ivanskorokhodov
 github_username:  universome
 profile:
-  image_url: "/assets/images/helsinki.jpg"
+  image_url: "/assets/images/ysda-av-1-edit-small.jpg"
 
 collections:
   - projects

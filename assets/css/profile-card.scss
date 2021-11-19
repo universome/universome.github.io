@@ -14,6 +14,7 @@
 .profile-image-container {
     // min-width: 200px;
     // max-width: 250px;
+    text-align: center;
     min-width: 200px;
     max-width: 200px;
     padding: 0;
@@ -23,6 +24,7 @@
 
 .profile-image-container > img {
     border-radius: 2px;
+    width: 180px;
     // vertical-align: middle;
 }
 

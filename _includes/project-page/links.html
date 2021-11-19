@@ -1,12 +1,17 @@
 <div class="project-links">
+    {% if page.links.arxiv %}
     <a class="project-link" href="{{page.links.arxiv}}" target="_blank">
         <i class="ai fa-fw fa-lg ai-arxiv"></i>
         Paper
     </a>
+    {% endif %}
+
+    {% if page.links.github %}
     <a class="project-link" href="{{page.links.github}}" target="_blank">
         <i class="fab fa-fw fa-lg fa-github"></i>
         Code
     </a>
+    {% endif %}
 
     {%- if page.links.openreview -%}
     <a class="project-link" href="{{page.links.openreview}}" target="_blank">
