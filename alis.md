@@ -87,7 +87,7 @@ teaser:
     type: custom
     content: >-
         <div style="text-align: center; margin-top: 50px;">
-            <video width=1200 id="teaser-video" style="border: 1px solid black; border-radius: 1px;" preload="auto" src="/assets/projects/alis/alis.m4v#t=27" type="video/mp4" autoplay controls loop></video>
+            <video width=1200 id="teaser-video" style="border: 1px solid black; border-radius: 1px;" preload="auto" src="/assets/projects/alis/alis.mp4#t=27" type="video/mp4" autoplay controls loop></video>
         </div>
     # <script>document.querySelector('#teaser-video').playbackRate = 1;</script
     # img_url: /assets/projects/alis/images/teaser.jpg
