@@ -23,9 +23,11 @@ layout: default
 
         {% include project-page/sections.html %}
 
+        {% if page.bibtex %}
         <div class="content-block-wrapper">
             <div class="content-block">{% include project-page/bibtex.html %}</div>
         </div>
+        {% endif %}
     <!-- </div> -->
 </div>
 
