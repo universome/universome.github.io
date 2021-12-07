@@ -9,6 +9,7 @@ layout: default
         <div class="content-block-wrapper">
             <div class="content-block">{% include project-page/title.html %}</div>
         </div>
+        {% if page.informal_summary %}
         <div class="content-block-wrapper abstract">
             <div class="content-block">
                 <div class="abstract">
@@ -20,6 +21,7 @@ layout: default
                 {% include project-page/links.html %}
             </div>
         </div>
+        {% endif %}
 
         {% include project-page/sections.html %}
 

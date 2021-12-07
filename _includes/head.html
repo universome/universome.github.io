@@ -19,6 +19,10 @@
         <meta property="og:url" content="{{page.og.url}}">
         {%- endif -%}
 
+        {%- for meta_tag in page.meta_tags -%}
+            <meta property="{{meta_tag.property}}" content="{{meta_tag.content}}">
+        {%- endfor -%}
+
         {%- feed_meta -%}
         {%- if jekyll.environment == 'production' and site.google_analytics -%}
             {%- include google-analytics.html -%}
