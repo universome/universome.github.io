@@ -11,9 +11,9 @@
 
 <ol class="authors-list">
 {%- for author in page.authors -%}
-    <li class="author-link">
+    <li class="author-link-container">
         {%- if author.link -%}
-        <a href="{{author.link}}" target="_blank">{{author.name}}</a>
+        <a class="author-link" href="{{author.link}}" target="_blank">{{author.name}}</a>
         {%- else -%}
         {{author.name}}
         {%- endif -%}

@@ -92,23 +92,28 @@
     border-radius: 2px;
 }
 
-.project-links a {
+.project-links .project-link {
     margin-right: 20px;
     color: black;
 }
 
-.project-links a:visited {
+.project-links .project-link:visited {
     color: black;
 }
 
-.project-links a:hover {
+.project-links .project-link.inactive {
+    color: gray;
+    border: 1px solid black;
+}
+
+.project-links .project-link:hover:not(.inactive) {
     background-color: var(--very-dark-color);
     color: white;
     transition: 0.2s;
     text-decoration: none;
 }
 
-.project-links a > i {
+.project-links .project-link > i {
     margin-bottom: -3px;
 }
 

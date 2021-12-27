@@ -43,14 +43,21 @@
     margin-left: 2em;
 }
 
-.project-page .authors-list a,
+.project-page .authors-list .author-link {
+    color: #3498db;
+}
+
+.project-page .common-orgs a {
+    color: black;
+}
+
+.project-page .authors-list .author-link,
 .project-page .common-orgs a {
     text-decoration: none;
-    color: black;
     padding: 5px 0;
 }
 
-.project-page .authors-list a:hover,
+.project-page .authors-list .author-link:hover,
 .project-page .common-orgs a:hover {
     // transition: 0.1s;
     color: var(--dark-color);
@@ -112,9 +119,9 @@
     text-align: center;
 }
 
-.project-page .img-container .caption {
-    margin-top: 15px;
-}
+// .project-page .img-container .caption {
+//     margin-top: 15px;
+// }
 
 .project-page .content-block {
     text-align: justify;
@@ -156,5 +163,5 @@
 }
 
 .project-page .img-container {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }

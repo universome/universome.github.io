@@ -2,8 +2,22 @@
     {% if page.links.arxiv %}
     <a class="project-link" href="{{page.links.arxiv}}" target="_blank">
         <i class="ai fa-fw fa-lg ai-arxiv"></i>
+        Arxiv
+    </a>
+    {% endif %}
+
+    {% if page.links.pdf %}
+    <a class="project-link" href="{{page.links.pdf}}" target="_blank">
+        <i class="fas fa-fw fa-lg fa-file-pdf"></i>
         Paper
     </a>
+    {% endif %}
+
+    {% if page.links.arxiv_inactive %}
+    <span class="project-link inactive" href="{{page.links.arxiv}}" target="_blank">
+        <i class="ai fa-fw fa-lg ai-arxiv"></i>
+        Arxiv (soon)
+    </span>
     {% endif %}
 
     {% if page.links.github %}
