@@ -39,7 +39,7 @@
 
 <div class="logos">
 {%- for org in page.common_organizations -%}
-<img class="logo" src="{{org.logo}}" alt="{{org.name}}">
+<img class="logo" src="{{org.logo}}" alt="{{org.name}}" style="height: {{org.logo_height | default: 70}}px;">
 {%- endfor -%}
 </div>
 

@@ -35,7 +35,7 @@
             <div class="img-container">
                 <!-- {{ paragraph.host | default: ""}} -->
                 <div style="text-align: center;">
-                    <video width={{paragraph.width}} id="teaser-video" style="border: 1px solid black; border-radius: 1px;" preload="auto" src="{{paragraph.host}}{{paragraph.url}}" type="video/mp4" controls loop></video>
+                    <video width={{paragraph.width}} style="border: 1px solid black; border-radius: 1px;" preload="auto" src="{{paragraph.host}}{{paragraph.url}}" type="video/mp4" controls loop></video>
                 </div>
                 <!-- <img src="{{paragraph.url}}" style="max-width: {{paragraph.max_width}}px"/> -->
                 {% if paragraph.caption %}
@@ -46,7 +46,7 @@
             {% when "videos" %}
             <div class="img-container">
                 {% for url in paragraph.urls %}
-                <video width={{paragraph.video_width}} id="teaser-video" style="border: 1px solid black; border-radius: 1px;" preload="auto" src="{{paragraph.host}}{{url}}" type="video/mp4" controls loop></video>
+                <video width="{{paragraph.video_width}}" style="border: 1px solid black; border-radius: 1px;" preload="auto" src="{{paragraph.host}}{{url}}" type="video/mp4" controls loop></video>
                 {% endfor %}
                 {% if paragraph.caption %}
                 <p class="caption">{{paragraph.caption}}</p>
@@ -62,6 +62,9 @@
             <div class="custom-include">
                 {% include {{ paragraph.file }} %}
             </div>
+
+            {% when "warning" %}
+            <p class="warning">{{paragraph.content}}</p>
         {%- endcase -%}
     {%- endfor -%}
 </div>
