@@ -11,6 +11,8 @@ og:
 meta_tags:
   - property: "og:video"
     content: "https://kaust-cair.s3.amazonaws.com/stylegan-v/stylegan-v.mp4"
+#   - property: "og:image"
+#     content: "https://kaust-cair.s3.amazonaws.com/stylegan-v/stylegan-v.mp4"
 authors:
     - name: Ivan Skorokhodov
       link: https://universome.github.io
