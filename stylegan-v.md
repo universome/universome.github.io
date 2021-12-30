@@ -8,9 +8,9 @@ favicon_url: /assets/favicon.ico
 og:
   description: "StyleGAN-V: A Continuous Video Generator with the Price, Image Quality and Perks of StyleGAN2"
   url: "https://universome.github.io/stylegan-v"
-# meta_tags:
-#   - property: "og:video"
-#     content: "/assets/images/ysda-av-1-edit-small.jpg"
+meta_tags:
+  - property: "og:video"
+    content: "https://kaust-cair.s3.amazonaws.com/stylegan-v/stylegan-v.mp4"
 authors:
     - name: Ivan Skorokhodov
       link: https://universome.github.io
@@ -33,9 +33,10 @@ informal_summary:
     - >-
         Videos show continuous events, yet most — if not all — video synthesis frameworks treat them discretely in time. In this work, we think of videos of what they should be — time-continuous signals, and extend the paradigm of neural representations to build a continuous-time video generator. For this, we first design continuous motion representations through the lens of positional embeddings. Then, we explore the question of training on very sparse videos and demonstrate that a good generator can be learned by using as few as 2 frames per clip. After that, we rethink the traditional image and video discriminators pair and propose to use a single hypernetwork-based one. This decreases the training cost and provides richer learning signal to the generator, making it possible to train directly on 1024x1024 videos for the first time. We build our model on top of StyleGAN2 and it is just 10% more expensive to train at the same resolution while achieving almost the same image quality. Moreover, our latent space features similar properties, enabling spatial manipulations that our method can propagate in time. We can generate arbitrarily long videos at arbitrary high frame rate, while prior work struggles to generate even 64 frames at a fixed rate. Our model achieves state-of-the-art results on four modern 256x256 video synthesis benchmarks and one 1024x1024 resolution one.
 
-# <div style="text-align: center; margin-top: 50px;">
-        #     <video width=1000 id="teaser-video" style="border: 1px solid black; border-radius: 1px;" preload="auto" src="/assets/projects/alis/alis.mp4" type="video/mp4" controls loop></video>
-        # </div>
+        <div style="text-align: center; margin-top: 50px;">
+            <video width=1000 id="teaser-video" style="border: 1px solid black; border-radius: 1px;" preload="auto" src="https://kaust-cair.s3.amazonaws.com/stylegan-v/stylegan-v.mp4" type="video/mp4" controls></video>
+        </div>
+
 links:
     pdf: https://kaust-cair.s3.amazonaws.com/stylegan-v/stylegan-v-paper.pdf
     # arxiv_inactive: true
