@@ -75,6 +75,8 @@ bibtex: >-
         journal={arXiv preprint arXiv:2011.12026},
         year={2020}
     }
+
+
     @article{cips,
         title={Image Generators with Conditionally-Independent Pixel Synthesis},
         author={Anokhin, Ivan and Demochkin, Kirill and Khakhulin, Taras and Sterkin, Gleb and Lempitsky, Victor and Korzhenkov, Denis},

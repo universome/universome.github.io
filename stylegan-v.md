@@ -38,7 +38,8 @@ informal_summary:
         # </div>
 links:
     pdf: https://kaust-cair.s3.amazonaws.com/stylegan-v/stylegan-v-paper.pdf
-    arxiv_inactive: true
+    # arxiv_inactive: true
+    arxiv: https://arxiv.org/abs/2112.14683
     #github: https://github.com/universome/stylegan-v
     github_soon: true
 
@@ -148,17 +149,21 @@ sections:
       paragraphs:
         - {width: 1024, type: video, host: *data_host, url: /videos/rainbow_jelly_256.mp4, caption: "Real videos for RainbowJelly 256x256"}
         - {width: 1024, type: video, host: *data_host, url: /videos/mead_front_256.mp4, caption: "Real videos for MEAD 256x256. Note that heads have static positions"}
-# bibtex: >-
-#     @article{stylegan_v,
-#         title={Adversarial Generation of Continuous Images},
-#         author={Ivan Skorokhodov and Savva Ignatyev and Mohamed Elhoseiny},
-#         journal={arXiv preprint arXiv:2011.12026},
-#         year={2020}
-#     }
-#     @article{digan,
-#         title={Image Generators with Conditionally-Independent Pixel Synthesis},
-#         author={Anokhin, Ivan and Demochkin, Kirill and Khakhulin, Taras and Sterkin, Gleb and Lempitsky, Victor and Korzhenkov, Denis},
-#         journal={arXiv preprint arXiv:2011.13775},
-#         year={2020}
-#     }
+bibtex: >-
+    @misc{stylegan_v,
+        title={StyleGAN-V: A Continuous Video Generator with the Price, Image Quality and Perks of StyleGAN2},
+        author={Ivan Skorokhodov and Sergey Tulyakov and Mohamed Elhoseiny},
+        journal={arXiv preprint arXiv:2112.14683},
+        year={2021}
+    }
+
+
+    @inproceedings{digan,
+        title={Generating Videos with Dynamics-aware Implicit Generative Adversarial Networks},
+        author={Anonymous},
+        booktitle={Submitted to The Tenth International Conference on Learning Representations },
+        year={2022},
+        url={https://openreview.net/forum?id=Czsdv-S4-w9},
+        note={under review}
+    }
 ---
