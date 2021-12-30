@@ -39,7 +39,8 @@ informal_summary:
 links:
     pdf: https://kaust-cair.s3.amazonaws.com/stylegan-v/stylegan-v-paper.pdf
     arxiv_inactive: true
-    github: https://github.com/universome/stylegan-v
+    #github: https://github.com/universome/stylegan-v
+    github_soon: true
 
 data_host: &data_host https://kaust-cair.s3.amazonaws.com/stylegan-v
 # data_host: &data_host ""

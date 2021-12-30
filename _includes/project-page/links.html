@@ -27,6 +27,13 @@
     </a>
     {% endif %}
 
+    {% if page.links.github_soon %}
+    <span class="project-link inactive" href="{{page.links.github}}" target="_blank">
+        <i class="fab fa-fw fa-lg fa-github"></i>
+        Code (soon)
+    </span>
+    {% endif %}
+
     {%- if page.links.openreview -%}
     <a class="project-link" href="{{page.links.openreview}}" target="_blank">
         <i class="far fa-fw fa-lg fa-file"></i>
