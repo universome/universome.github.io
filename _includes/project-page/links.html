@@ -40,4 +40,11 @@
         OpenReview
     </a>
     {%- endif -%}
+
+    {%- if page.links.custom -%}
+    <a class="project-link" href="{{page.links.custom.href}}" target="_blank">
+        <i class="fas fa-fw fa-lg fa-link"></i>
+        {{page.links.custom.text}}
+    </a>
+    {%- endif -%}
 </div>
