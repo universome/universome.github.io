@@ -3,7 +3,7 @@ layout: page
 published: true
 disable_seo: false
 title: "StyleGAN-V: A Continuous Video Generator with the Price, Image Quality and Perks of StyleGAN2"
-conference: ~
+conference: CVPR 2022
 favicon_url: /assets/favicon.ico
 og:
   description: "StyleGAN-V: A Continuous Video Generator with the Price, Image Quality and Perks of StyleGAN2"
@@ -43,8 +43,8 @@ links:
     pdf: https://kaust-cair.s3.amazonaws.com/stylegan-v/stylegan-v-paper.pdf
     # arxiv_inactive: true
     arxiv: https://arxiv.org/abs/2112.14683
-    #github: https://github.com/universome/stylegan-v
-    github_soon: true
+    github: https://github.com/universome/stylegan-v
+    # github_soon: true
 
 data_host: &data_host https://kaust-cair.s3.amazonaws.com/stylegan-v
 # data_host: &data_host ""
@@ -160,13 +160,11 @@ bibtex: >-
         year={2021}
     }
 
-
     @inproceedings{digan,
         title={Generating Videos with Dynamics-aware Implicit Generative Adversarial Networks},
-        author={Anonymous},
-        booktitle={Submitted to The Tenth International Conference on Learning Representations },
+        author={Sihyun Yu and Jihoon Tack and Sangwoo Mo and Hyunsu Kim and Junho Kim and Jung-Woo Ha and Jinwoo Shin},
+        booktitle={International Conference on Learning Representations},
         year={2022},
-        url={https://openreview.net/forum?id=Czsdv-S4-w9},
-        note={under review}
+        url={https://openreview.net/forum?id=Czsdv-S4-w9}
     }
 ---

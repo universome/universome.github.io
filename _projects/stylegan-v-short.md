@@ -4,8 +4,8 @@ date: 29 December 2021
 categories: gans, inrs, video generation
 arxiv_url: "https://arxiv.org/abs/2112.14683"
 project_url: "https://universome.github.io/stylegan-v"
-is_preprint: true
-# conference: ICCV 2021
+is_preprint: false
+conference: CVPR 2022
 image_url: "/assets/images/projects-thumbs/stylegan-v.jpg"
 code_url: "https://github.com/universome/stylegan-v"
 authors:

@@ -69,13 +69,14 @@ sections:
           content: >-
             <a href="https://arxiv.org/abs/2011.13775" target="_blank">CIPS</a> is a contemporary work which also builds a large-scale INR-based GAN for image generation.
 bibtex: >-
-    @article{inr_gan,
-        title={Adversarial Generation of Continuous Images},
-        author={Ivan Skorokhodov and Savva Ignatyev and Mohamed Elhoseiny},
-        journal={arXiv preprint arXiv:2011.12026},
-        year={2020}
+    @InProceedings{inr_gan,
+        author    = {Skorokhodov, Ivan and Ignatyev, Savva and Elhoseiny, Mohamed},
+        title     = {Adversarial Generation of Continuous Images},
+        booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+        month     = {June},
+        year      = {2021},
+        pages     = {10753-10764}
     }
-
 
     @article{cips,
         title={Image Generators with Conditionally-Independent Pixel Synthesis},

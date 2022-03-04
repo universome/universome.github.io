@@ -15,7 +15,11 @@
     </div>
     <div class="project-content">
         <div class="project-title">
+            {% if project.project_url %}
+            <h3><a href="{{project.project_url}}" target="_blank">{{ project.title | escape }}</a></h3>
+            {% else %}
             <h3>{{ project.title | escape }}</h3>
+            {% endif %}
             {%- if project.is_preprint -%}
             <p class="project-conf-label preprint">preprint</p>
             {%- else -%}
@@ -27,7 +31,7 @@
             {%- for author in project.authors -%}
             {% if forloop.index != 1 %}, {% endif %}
             {%- if author == "Ivan Skorokhodov" -%}
-                <strong>{{ author }}</strong>
+                <strong class="author-me">{{ author }}</strong>
             {%- else -%}
                 {{ author }}
             {%- endif -%}

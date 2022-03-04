@@ -37,6 +37,17 @@
     // color: #1e90ff;
 }
 
+.project-title a,
+.project-title a:hover,
+.project-title a:visited {
+    text-decoration: none;
+    color: #111;
+}
+
+.project-title a:hover {
+    color: #1e90ff;
+}
+
 .project-image {
     margin: 20px;
     margin-left: 0;
@@ -119,6 +130,12 @@
 
 .project-desc {
     text-align: justify;
+}
+
+.author-me {
+    border-bottom: 1px solid black;
+    padding: 0px 1px;
+    padding-bottom: 1px;
 }
 
 @import "minima";
