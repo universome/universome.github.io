@@ -119,9 +119,13 @@
     text-align: center;
 }
 
-// .project-page .img-container .caption {
-//     margin-top: 15px;
-// }
+.project-page .content-block .img-container .text-justify {
+    text-align: justify;
+}
+
+.project-page .img-container .caption {
+    margin-top: 15px;
+}
 
 .project-page .content-block {
     text-align: justify;

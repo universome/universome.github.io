@@ -29,9 +29,11 @@
         {%- endif -%}
     {%- endif -%}
 
-    <!-- Adding the favicon -->
     {%- if page.favicon_url -%}
+    <!-- Adding the favicon -->
     <link rel="shortcut icon" href="{{page.favicon_url}}" />
+    {%- else -%}
+    <!-- No favicon -->
     {%- endif -%}
 
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">

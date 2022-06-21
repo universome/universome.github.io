@@ -17,7 +17,11 @@
             <div class="img-container">
                 <img src="{{paragraph.url}}" style="max-width: {{paragraph.max_width}}px"/>
                 {% if paragraph.caption %}
-                <p class="caption">{{paragraph.caption}}</p>
+                    {% if paragraph.justify_text %}
+                        <p class="caption text-justify">{{paragraph.caption}}</p>
+                    {% else %}
+                        <p class="caption">{{paragraph.caption}}</p>
+                    {% endif %}
                 {% endif %}
             </div>
 
@@ -35,7 +39,9 @@
             <div class="img-container">
                 <!-- {{ paragraph.host | default: ""}} -->
                 <div style="text-align: center;">
-                    <video width={{paragraph.width}} style="border: 1px solid black; border-radius: 1px;" preload="auto" src="{{paragraph.host}}{{paragraph.url}}" type="video/mp4" controls loop></video>
+                    {% assign border_style = 'border: none;' %}
+                    {% unless paragraph.ignore_border %}{% assign border_style = 'border: 1px solid black; border-radius: 1px;' %}{% endunless %}
+                    <video width={{paragraph.width}} style="{{border_style}}" preload="auto" src="{{paragraph.host}}{{paragraph.url}}" type="video/mp4" controls loop></video>
                 </div>
                 <!-- <img src="{{paragraph.url}}" style="max-width: {{paragraph.max_width}}px"/> -->
                 {% if paragraph.caption %}
