@@ -37,7 +37,7 @@ informal_summary:
 links:
     pdf: /assets/projects/epigraf/epigraf.pdf
     github: https://github.com/universome/epigraf
-    arxiv_soon: true
+    arxiv: https://arxiv.org/abs/2206.10535
     data_soon: true
 data_host: &data_host "/assets/projects/epigraf"
 sections:
