@@ -7,6 +7,9 @@ favicon_url: /assets/favicon.ico
 og:
   description: "EpiGRAF: Rethinking training of 3D GANs"
   url: "https://universome.github.io/epigraf"
+meta_tags:
+  - property: "og:video"
+    content: "https://universome.github.io/assets/projects/epigraf/videos/teaser.mp4"
 authors:
     - name: Ivan Skorokhodov
       link: https://universome.github.io
@@ -82,4 +85,11 @@ sections:
           ignore_border: true
         - type: text
           content: In contrast to upsampler-based models, our generator is purely NeRF-based, so it can directly incorporate the advancements from the NeRF literature. In this example, we simply copy-pasted the code from NeRF++ for background separation via the inverse sphere parametrization. For this experiment, we didn't use pose conditioning in the discriminator (which we use for FFHQ and Cats to avoid flat surfaces — otherwise we have the same issues as EG3D and GRAM) and found that when the background separation is enabled, it learns to produce non-flat surfaces on its own, i.e. without direct guidance from the discriminator.
+bibtex: >-
+    @article{epigraf,
+        title={EpiGRAF: Rethinking training of 3D GANs},
+        author={Skorokhodov, Ivan and Tulyakov, Sergey and Wang, Yiqun and Wonka, Peter},
+        journal={arXiv preprint arXiv:2206.10535},
+        year={2022},
+    }
 ---
