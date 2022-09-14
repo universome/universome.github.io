@@ -4,7 +4,8 @@ date: 21 June 2022
 categories: gans, nerf, 3d generation
 arxiv_url: "https://arxiv.org/abs/2206.10535"
 project_url: "https://universome.github.io/epigraf"
-is_preprint: true
+is_preprint: false
+conference: NeurIPS 2022
 image_url: "/assets/images/projects-thumbs/epigraf.jpg"
 code_url: "https://github.com/universome/epigraf"
 authors:

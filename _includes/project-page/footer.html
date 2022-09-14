@@ -1,3 +1,6 @@
+{% if page.disable_seo %}
+<div style="display: none;">Just chekcing that no footer is included.</div>
+{% else %}
 <footer class="site-footer h-card">
 <div class="wrapper">
     <p class="footer-text">
@@ -6,3 +9,4 @@
     </p>
 </div>
 </footer>
+{%- endif -%}

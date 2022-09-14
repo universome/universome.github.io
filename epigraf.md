@@ -2,7 +2,7 @@
 layout: page
 published: true
 title: "EpiGRAF: Rethinking training of 3D GANs"
-conference: ~
+conference: NeurIPS 2022
 favicon_url: /assets/favicon.ico
 og:
   description: "EpiGRAF: Rethinking training of 3D GANs"
