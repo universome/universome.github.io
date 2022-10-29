@@ -41,7 +41,7 @@ links:
     pdf: /assets/projects/epigraf/epigraf.pdf
     github: https://github.com/universome/epigraf
     arxiv: https://arxiv.org/abs/2206.10535
-    data_soon: true
+    data: https://github.com/universome/megascans-rendering
 data_host: &data_host "/assets/projects/epigraf"
 sections:
     - title: "Architecture"
