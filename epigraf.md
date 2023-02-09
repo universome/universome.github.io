@@ -50,7 +50,14 @@ sections:
           url: /assets/projects/epigraf/images/architecture.png
           justify_text: true
           caption: "Our generator (left) is purely NeRF-based and uses the <a href='https://nvlabs.github.io/eg3d' target='_blank'>tri-plane backbone</a> with the StyleGAN2 decoder (but without the 2D upsampler). Our discriminator (right) is also based on StyleGAN2, but is modulated by the patch location and scale parameters. We use the patch-wise optimization for training with our proposed Beta scale sampling, which allows our model to converge $\times$2-3 faster than the upsampler-based architectures despite the generator modeling geometry in full resolution."
-    - title: "High-fidelity geometry"
+    - title: "Geometry visualization on FFHQ 512x512"
+      paragraphs:
+        - type: text
+          content: "Our generator models the geometry in the full dataset resolution, which allows it to capture high-fidelity details. On those videos, one can observe that our generator models high-frequency details better: 1) our generator has more detailed hair structure; 2) eyes and mouth for EG3D are over-smoothed. It is recommended to view this videos in the full-screen mode: they have the resolution of ~2048x1024 not to omit high-frequency details."
+        - {type: video, host: *data_host, url: /videos/shapes-comparison-2.mp4}
+        - type: text
+          content: "To produce those visualizations, we followed EG3D's pipeline: 1) generated MRC files of the density field at the 512x512x512 volume resolution; 2) visualized in ChimeraX via the <i>turn</i> and <i>record</i> commands. For EG3D, we set the marching cubes level parameter to 10 (as recommended by the repo). We used step=1 (the minimal value) for surface resolution and full lighting for the both methods. We used the provided original EG3D checkpoint, named <i>ffhq512-128.pkl</i>. Truncation was set to 0.7 for both generators."
+    - title: "Geometry visualization on Megascans"
       paragraphs:
         - type: image
           url: /assets/projects/epigraf/images/geometry.png
