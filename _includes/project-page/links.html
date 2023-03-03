@@ -55,6 +55,13 @@
     </span>
     {% endif %}
 
+    {% if page.links.supp %}
+    <a class="project-link" href="{{page.links.supp}}" target="_blank">
+        <i class="fas fa-file-video"></i>
+        &nbsp;Supplementary
+    </a>
+    {% endif %}
+
     {%- if page.links.openreview -%}
     <a class="project-link" href="{{page.links.openreview}}" target="_blank">
         <i class="far fa-fw fa-lg fa-file"></i>

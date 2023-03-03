@@ -33,8 +33,7 @@ links:
   openreview: https://openreview.net/forum?id=7pgFL2Dkyyy
   colab: https://gist.github.com/iclr2021-classnorm/c29c8a1d4da78eb75a4cae24348b061d
 bibtex: >-
-  @inproceedings{
-    class_norm,
+  @inproceedings{class-norm,
     title={Class Normalization for (Continual)? Generalized Zero-Shot Learning},
     author={Ivan Skorokhodov and Mohamed Elhoseiny},
     booktitle={International Conference on Learning Representations},

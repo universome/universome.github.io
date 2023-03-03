@@ -15,13 +15,9 @@
 
             {% when "image" %}
             <div class="img-container">
-                <img src="{{paragraph.url}}" style="max-width: {{paragraph.max_width}}px"/>
+                <img src="{{paragraph.url}}" style="width: {{paragraph.max_width}}px"/>
                 {% if paragraph.caption %}
-                    {% if paragraph.justify_text %}
-                        <p class="caption text-justify">{{paragraph.caption}}</p>
-                    {% else %}
-                        <p class="caption">{{paragraph.caption}}</p>
-                    {% endif %}
+                    <p class="caption"><span>{{paragraph.caption}}</span></p>
                 {% endif %}
             </div>
 
@@ -39,9 +35,11 @@
             <div class="img-container">
                 <!-- {{ paragraph.host | default: ""}} -->
                 <div style="text-align: center;">
-                    {% assign border_style = 'border: none;' %}
-                    {% unless paragraph.ignore_border %}{% assign border_style = 'border: 1px solid black; border-radius: 1px;' %}{% endunless %}
-                    <video style="{{border_style}}; max-width: 100%; height: auto;" preload="auto" src="{{paragraph.host}}{{paragraph.url}}" type="video/mp4" controls loop></video>
+                    {% assign border_style = 'border: none' %}
+                    {% unless paragraph.ignore_border %}{% assign border_style = 'border: 1px solid black; border-radius: 1px' %}{% endunless %}
+                    {% assign controls = 'controls' %}
+                    {% if paragraph.no_controls %}{% assign controls = '' %}{% endif %}
+                    <video style="{{border_style}}; height: auto;" class="{{paragraph.additional_classes}}" preload="auto" src="{{paragraph.host}}{{paragraph.url}}" type="video/mp4" {{controls}} loop {{paragraph.autoplay_attr}}></video>
                 </div>
                 <!-- <img src="{{paragraph.url}}" style="max-width: {{paragraph.max_width}}px"/> -->
                 {% if paragraph.caption %}
@@ -51,16 +49,23 @@
 
             {% when "videos" %}
             <div class="img-container">
-                {% for url in paragraph.urls %}
-                <video width="{{paragraph.video_width}}" style="border: 1px solid black; border-radius: 1px;" preload="auto" src="{{paragraph.host}}{{url}}" type="video/mp4" controls loop></video>
-                {% endfor %}
+                <div class="videos-list">
+                    {% for video in paragraph.videos %}
+                    <div class="video-item">
+                        <video width="{{paragraph.video_width}}" style="border: 1px solid black; border-radius: 1px;" preload="auto" src="{{paragraph.host}}{{video.url}}" type="video/mp4" controls loop {{paragraph.autoplay_attr}}></video>
+                        {% if video.caption %}
+                        <p class="caption"><span>{{video.caption}}</span></p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
                 {% if paragraph.caption %}
-                <p class="caption">{{paragraph.caption}}</p>
+                <p class="caption"><span>{{paragraph.caption}}</span></p>
                 {% endif %}
             </div>
 
             {% when "table" %}
-            <div class="table-container">
+            <div class="table-container" style="max-width: {{paragraph.max_width}}px;">
                 <p>{{paragraph.content}}</p>
             </div>
 

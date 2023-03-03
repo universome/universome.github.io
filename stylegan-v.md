@@ -29,8 +29,7 @@ common_organizations:
       logo: /assets/images/kaust-logo.png
     - name: Snap Inc.
       link: https://research.snap.com
-      logo: /assets/images/snap-logo-no-padding.png
-      logo_height: 40
+      logo: /assets/images/snap-logo-small-padding.png
 informal_summary:
     - >-
         Videos show continuous events, yet most — if not all — video synthesis frameworks treat them discretely in time. In this work, we think of videos of what they should be — time-continuous signals, and extend the paradigm of neural representations to build a continuous-time video generator. For this, we first design continuous motion representations through the lens of positional embeddings. Then, we explore the question of training on very sparse videos and demonstrate that a good generator can be learned by using as few as 2 frames per clip. After that, we rethink the traditional image and video discriminators pair and propose to use a single hypernetwork-based one. This decreases the training cost and provides richer learning signal to the generator, making it possible to train directly on 1024x1024 videos for the first time. We build our model on top of StyleGAN2 and it is just 10% more expensive to train at the same resolution while achieving almost the same image quality. Moreover, our latent space features similar properties, enabling spatial manipulations that our method can propagate in time. We can generate arbitrarily long videos at arbitrary high frame rate, while prior work struggles to generate even 64 frames at a fixed rate. Our model achieves state-of-the-art results on four modern 256x256 video synthesis benchmarks and one 1024x1024 resolution one.
@@ -44,7 +43,6 @@ links:
     # arxiv_inactive: true
     arxiv: https://arxiv.org/abs/2112.14683
     github: https://github.com/universome/stylegan-v
-    # github_soon: true
 
 data_host: &data_host https://kaust-cair.s3.amazonaws.com/stylegan-v
 # data_host: &data_host ""
@@ -90,20 +88,20 @@ sections:
         - type: videos
           video_width: 256
           host: *data_host
-          urls:
-            - /videos/videos-long/mocogan-hd_mead_front_1024/00.mp4
-            - /videos/videos-long/mocogan-hd_mead_front_1024/01.mp4
-            - /videos/videos-long/mocogan-hd_mead_front_1024/02.mp4
-            - /videos/videos-long/mocogan-hd_mead_front_1024/03.mp4
+          videos:
+            - {url: /videos/videos-long/mocogan-hd_mead_front_1024/00.mp4}
+            - {url: /videos/videos-long/mocogan-hd_mead_front_1024/01.mp4}
+            - {url: /videos/videos-long/mocogan-hd_mead_front_1024/02.mp4}
+            - {url: /videos/videos-long/mocogan-hd_mead_front_1024/03.mp4}
           caption: MoCoGAN-HD
         - type: videos
           video_width: 256
           host: *data_host
-          urls:
-            - /videos/videos-long/ours_mead_front_1024/00.mp4
-            - /videos/videos-long/ours_mead_front_1024/01.mp4
-            - /videos/videos-long/ours_mead_front_1024/02.mp4
-            - /videos/videos-long/ours_mead_front_1024/03.mp4
+          videos:
+            - {url: /videos/videos-long/ours_mead_front_1024/00.mp4}
+            - {url: /videos/videos-long/ours_mead_front_1024/01.mp4}
+            - {url: /videos/videos-long/ours_mead_front_1024/02.mp4}
+            - {url: /videos/videos-long/ours_mead_front_1024/03.mp4}
           caption: StyleGAN-V (ours)
     - title: Projecting off-the-shelf images into our model.
       paragraphs:
@@ -112,22 +110,22 @@ sections:
         - type: videos
           host: *data_host
           video_width: 512
-          urls:
-            - /videos/videos-edit/adele-2_projected.mp4
-            - /videos/videos-edit/bengio_projected.mp4
-            - /videos/videos-edit/lawrence_projected.mp4
-            - /videos/videos-edit/brad-pitt_projected.mp4
-            - /videos/videos-edit/hopkins_projected.mp4
-            - /videos/videos-edit/rihanna_projected.mp4
+          videos:
+            - {url: /videos/videos-edit/adele-2_projected.mp4}
+            - {url: /videos/videos-edit/bengio_projected.mp4}
+            - {url: /videos/videos-edit/lawrence_projected.mp4}
+            - {url: /videos/videos-edit/brad-pitt_projected.mp4}
+            - {url: /videos/videos-edit/hopkins_projected.mp4}
+            - {url: /videos/videos-edit/rihanna_projected.mp4}
     - title: Video editing using CLIP
       paragraphs:
         - type: videos
           video_width: 256
           host: *data_host
-          urls:
-            - /videos/videos-edit/adele_old.mp4
-            - /videos/videos-edit/bengio_makeup.mp4
-            - /videos/videos-edit/bengio_tshirt.mp4
+          videos:
+            - {url: /videos/videos-edit/adele_old.mp4}
+            - {url: /videos/videos-edit/bengio_makeup.mp4}
+            - {url: /videos/videos-edit/bengio_tshirt.mp4}
           caption: "Text prompts used (left-to-right, top-to-bottom): <b>&laquo;An old person&raquo;</b>, <b>&laquo;A person with makeup&raquo;</b>, <b>&laquo;A person with a purple t-shirt&raquo;</b>"
         - {width: 512, type: video, host: *data_host, url: /videos/videos-edit/beard_gen_w.mp4, caption: "Left: original video. Right: edited with <b>&laquo;A person with a beard&raquo;</b>"}
         - {width: 512, type: video, host: *data_host, url: /videos/videos-edit/blue_eyes_gen_w.mp4, caption: "Left: original video. Right: edited with <b>&laquo;A person with blue eyes&raquo;</b>"}
@@ -144,20 +142,21 @@ sections:
         - type: videos
           video_width: 512
           host: *data_host
-          urls:
-            - /videos/moco/ffs_256_unstable.mp4
-            - /videos/moco/sky_timelapse_256.mp4
+          videos:
+            - {url: /videos/moco/ffs_256_unstable.mp4}
+            - {url: /videos/moco/sky_timelapse_256.mp4}
           caption: "Content/motion decomposition for FaceForensics 256x256 (left) and SkyTimelapse 256x256 (right). Each row is a different content code, while each column is a different set of motion codes. Note that our method captures temporal patterns not only in terms of motion, but also appearance changes, like time of day."
     - title: Real videos
       paragraphs:
         - {width: 1024, type: video, host: *data_host, url: /videos/rainbow_jelly_256.mp4, caption: "Real videos for RainbowJelly 256x256"}
         - {width: 1024, type: video, host: *data_host, url: /videos/mead_front_256.mp4, caption: "Real videos for MEAD 256x256. Note that heads have static positions"}
 bibtex: >-
-    @misc{stylegan_v,
-        title={StyleGAN-V: A Continuous Video Generator with the Price, Image Quality and Perks of StyleGAN2},
-        author={Ivan Skorokhodov and Sergey Tulyakov and Mohamed Elhoseiny},
-        journal={arXiv preprint arXiv:2112.14683},
-        year={2021}
+    @inproceedings{stylegan-v,
+        title={Stylegan-v: A continuous video generator with the price, image quality and perks of stylegan2},
+        author={Skorokhodov, Ivan and Tulyakov, Sergey and Elhoseiny, Mohamed},
+        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+        pages={3626--3636},
+        year={2022}
     }
 
     @inproceedings{digan,

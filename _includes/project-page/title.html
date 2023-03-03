@@ -9,22 +9,26 @@
 <h5 class="conference-name">{{page.conference}}</h5>
 {% endif %}
 
-<ol class="authors-list">
+<p class="authors-list">
 {%- for author in page.authors -%}
-    <li class="author-link-container">
+    <span class="author-link-container">
         {%- if author.link -%}
         <a class="author-link" href="{{author.link}}" target="_blank">{{author.name}}</a>
         {%- else -%}
         {{author.name}}
         {%- endif -%}
-        {%- for org_index in author.affiliations -%}
+        <!-- {%- for org_index in author.affiliations -%}
         <sup>{{org_index}}{%- if forloop.last != true -%},{%- endif -%}</sup>
-        {%- endfor -%}
-    </li>
+        {%- endfor -%} -->
+        {%- if author.org -%}
+        <br/>
+        <a class="org-link" href="{{page.common_organizations[author.org].link}}" target="_blank">{{page.common_organizations[author.org].name}}</a>
+        {%- endif -%}
+    </span>
 {%- endfor -%}
-</ol>
+</p>
 
-{%- if page.common_organizations -%}
+<!-- {%- if page.common_organizations -%}
 <h4 class="common-orgs">
 {%- for org in page.common_organizations -%}
 <span class="common-org-name">
@@ -35,11 +39,11 @@
 </span>
 {%- endfor -%}
 </h4>
-{%- endif -%}
+{%- endif -%} -->
 
 <div class="logos">
 {%- for org in page.common_organizations -%}
-<img class="logo" src="{{org.logo}}" alt="{{org.name}}" style="height: {{org.logo_height | default: 70}}px;">
+<img class="logo" src="{{org.logo}}" alt="{{org.name}}">
 {%- endfor -%}
 </div>
 

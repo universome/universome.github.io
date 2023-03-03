@@ -2,14 +2,16 @@
 ---
 @import "minima";
 
+.page-content {
+    padding: 10px 0;
+}
+
 .project-page .content-block {
     margin: 0 auto;
     max-width: 1200px;
 }
 
-
 .project-page .project-links {
-    margin-top: 50px;
     text-align: center;
     white-space: nowrap;
 }
@@ -17,10 +19,11 @@
 .project-page-title {
     text-align: center;
     font-size: 2.5em;
+    margin-bottom: 0px;
 }
 
 .project-page-title.long-title {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .project-page .conference-name {
@@ -35,13 +38,13 @@
 .project-page .authors-list {
     margin-left: 0;
     list-style: none;
-    display: flex;
-    justify-content: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1em;
 }
 
-.project-page .authors-list li:not(:first-child) {
-    margin-left: 2em;
+.project-page .authors-list span:not(:first-child) {
+    margin-left: 1.5em;
 }
 
 @include media-query($on-palm) {
@@ -69,29 +72,40 @@
 }
 
 .project-page .authors-list .author-link-container {
+    display: inline-block;
     text-align: center;
 }
 
-.project-page .authors-list .author-link {
+.project-page .common-orgs a,
+.project-page .common-orgs a:visited {
     color: #3498db;
-}
-
-.project-page .common-orgs a {
-    color: black;
 }
 
 .project-page .authors-list .author-link,
 .project-page .common-orgs a {
     text-decoration: none;
-    padding: 5px 0;
+    padding: 1px 0;
     text-align: center;
+}
+
+.project-page .authors-list .org-link {
+    text-decoration: none;
+    padding: 1px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.project-page .authors-list .org-link:hover {
+    color: #3498db;
 }
 
 .project-page .authors-list .author-link:hover,
 .project-page .common-orgs a:hover {
+    color: #3498db;
     // transition: 0.1s;
-    color: var(--dark-color);
-    border-bottom: 2px solid var(--dark-color);
+    // color: var(--dark-color);
+    // border-bottom: 2px solid var(--dark-color);
 }
 
 .project-page .authors-list sup,
@@ -139,17 +153,22 @@
     background-color: var(--light-grey-blue);
     // color: white;
     box-shadow: inset 0 0 1px 0px var(--very-dark-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .project-page .content-block-wrapper {
-    padding: 30px 10px;
+    padding: 10px 10px;
 }
+
 
 .project-page .content-block .img-container {
     text-align: center;
 }
 
-.project-page .content-block .img-container .text-justify {
+// Using the trick from https://stackoverflow.com/a/43627669/2685677.
+.project-page .content-block .caption span {
+    display: inline-block;
     text-align: justify;
 }
 
@@ -161,12 +180,50 @@
     text-align: justify;
 }
 
+// .project-page .videos-list {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     margin: 0 auto;
+// }
+
+.project-page .videos-list .video-item {
+    display: inline-block;
+}
+
+.project-page .videos-list .video-item .caption {
+    margin: 0;
+}
+
+.project-page video {
+    max-width: 100%;
+}
+
+.project-page .small-video {
+    max-width: 600px;
+}
+
 // .project-page .content-block .img-container img {
 //     max-width: 700px;
 // }
 
 .project-page .warning {
     color: #e74c3c;
+}
+
+.project-page .table-container {
+    font-size: 1em;
+    margin: 0 auto;
+    // line-height: 0.3em;
+}
+
+.project-page .table-container th, .project-page .table-container td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.project-page .table-container th:first-of-type, .project-page .table-container td:first-of-type {
+    text-align: left;
 }
 
 .bibtex pre {
@@ -176,6 +233,7 @@
     background-color: var(--light-grey-blue);
     // box-shadow: inset 0 0 1px 0px var(--very-dark-color);
     padding: 10px;
+    font-size: 0.9em;
 }
 
 
@@ -189,9 +247,8 @@
 }
 
 .section-title {
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 20pt;
-    text-align: center;
 }
 
 .project-page .section .hr {
@@ -202,4 +259,15 @@
 
 .project-page .img-container {
     margin-bottom: 25px;
+}
+
+.project-page .youtube-video-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-page .youtube-video-container iframe {
+    height: 420px;
+    width: 750px;
+    max-width: 100%;
 }
