@@ -5,7 +5,7 @@ published: true
 favicon_url: /assets/favicon-cookie.io
 meta_tags:
   - property: "og:description"
-    content: "CS PhD student at KAUST university. I work on deep learning, generative models, neural rendering and hypernetworks."
+    content: "Research Scientist at Snap, working on image/video/3D generative models"
   - property: "og:image"
     content: "/assets/images/ysda-av-1-edit-small.jpg"
   - property: "og:type"
