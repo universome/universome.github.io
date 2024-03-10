@@ -13,6 +13,9 @@
             {% when "text" %}
             <p>{{paragraph.content}}</p>
 
+            {% when "mini-title" %}
+            <center><h3>{{paragraph.content}}</h3></center>
+
             {% when "image" %}
             <div class="img-container">
                 <img src="{{paragraph.url}}" style="width: {{paragraph.max_width}}px"/>
@@ -39,7 +42,7 @@
                     {% unless paragraph.ignore_border %}{% assign border_style = 'border: 1px solid black; border-radius: 1px' %}{% endunless %}
                     {% assign controls = 'controls' %}
                     {% if paragraph.no_controls %}{% assign controls = '' %}{% endif %}
-                    <video style="{{border_style}}; height: auto;" class="{{paragraph.additional_classes}}" preload="auto" src="{{paragraph.host}}{{paragraph.url}}" type="video/mp4" {{controls}} loop {{paragraph.autoplay_attr}}></video>
+                    <video style="{{border_style}}; height: auto;" width="{{paragraph.width}}" class="{{paragraph.additional_classes}}" preload="auto" src="{{paragraph.host}}{{paragraph.url}}" type="video/mp4" {{controls}} loop {{paragraph.autoplay_attr}}></video>
                 </div>
                 <!-- <img src="{{paragraph.url}}" style="max-width: {{paragraph.max_width}}px"/> -->
                 {% if paragraph.caption %}
