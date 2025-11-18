@@ -1,5 +1,5 @@
 ---
-title:  "Loss Landscape Sightseeing with Multi-Point Optimization"
+title:  "Loss Patterns of Neural Networks"
 date: 9 Oct 2019
 categories: loss landscape analysis, optimization
 arxiv_url: "https://arxiv.org/abs/1910.03867"

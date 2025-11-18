@@ -33,7 +33,7 @@ sections:
           max_width: 600
 bibtex: >-
     @misc{loss_patterns,
-        title={Loss Landscape Sightseeing with Multi-Point Optimization},
+        title={Loss Patterns of Neural Networks},
         author={Ivan Skorokhodov and Mikhail Burtsev},
         year={2019},
         eprint={1910.03867},
